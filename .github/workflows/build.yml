@@ -52,7 +52,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Autoconf
-        run: C:\msys64\usr\bin\bash -c -l 'cd "$GITHUB_WORKSPACE" && autoreconf -i -f'
+        run: autoreconf -i -f
+        env:
+          PATH: C:\msys64\usr\bin;%PATH%
       - name: Configure
         run: C:\msys64\usr\bin\bash -c -l 'cd "$GITHUB_WORKSPACE" && ./configure'
       - name: Make
