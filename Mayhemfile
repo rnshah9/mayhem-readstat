@@ -1,6 +1,5 @@
-project: rnshah9/mayhem-readstat
+project: readstat
 target: readstat
 
 cmds:
-  - cmd: /repo/.libs/readstat @@
-    filepath: /test.dta
+  - cmd: /install/bin/readstat @@
