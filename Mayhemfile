@@ -2,4 +2,5 @@ project: readstat
 target: readstat
 
 cmds:
-  - cmd: /install/bin/readstat @@
+  - cmd: /install/bin/readstat /test.dta
+    filepath: /test.dta
